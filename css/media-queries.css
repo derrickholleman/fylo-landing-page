@@ -29,6 +29,9 @@
 /* SWITCH TO MOBILE VIEW */
 /* --------------------- */
 @media screen and (max-width: 867px) {
+    .header-container {
+        padding-bottom: 7rem;
+    }
     .header-logo {
         margin-bottom: 2rem;
     }
@@ -45,6 +48,10 @@
     }
     .hero-paragraph {
         max-width: 85%;
+        margin-top: -2rem;
+    }
+    .cta-button {
+        margin-top: -2rem;
     }
     .info-grid {
         display: flex;
