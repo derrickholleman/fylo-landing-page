@@ -32,6 +32,9 @@
     .header-container {
         padding-bottom: 7rem;
     }
+    .hero-container {
+        height: 700px;
+    }
     .header-logo {
         margin-bottom: 2rem;
     }
@@ -48,10 +51,6 @@
     }
     .hero-paragraph {
         max-width: 85%;
-        margin-top: -2rem;
-    }
-    .cta-button {
-        margin-top: -2rem;
     }
     .info-grid {
         display: flex;
