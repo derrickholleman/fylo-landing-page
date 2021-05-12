@@ -353,7 +353,7 @@
     hsl(198, 60%, 50%));
     border: none;
     border-radius: 40px;
-    padding: .8rem 2rem;
+    padding: .6rem 4rem;
     cursor: pointer;
   }
   .cta-button-bottom:hover, 
