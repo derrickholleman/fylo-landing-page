@@ -46,9 +46,9 @@
   .nav-ul a {
     color: white;
   }
-  .nav-ul a:hover, 
-  .nav-ul a:active, 
-  .nav-ul a:focus {
+  .nav-ul a:hover,
+  .nav-ul a:focus, 
+  .nav-ul a:active {
     border-bottom: 2px solid white;
     padding-bottom: .25rem;
   }
@@ -92,8 +92,8 @@
     cursor: pointer;
   }
   .cta-button:hover, 
-  .cta-button:active, 
-  .cta-button:focus {
+  .cta-button:focus,
+  .cta-button:active {
     background: hsl(176, 65%, 69%);
   }
 
@@ -213,14 +213,14 @@
     transition: .5s ease-in-out;
   }
   .see-how-cta a:hover img, 
-  .see-how-cta a:active img, 
-  .see-how-cta a:focus img {
+  .see-how-cta a:focus img,
+  .see-how-cta a:active img {
     transform: translateX(30px);
   }
 
   .see-how-cta a:hover, 
-  .see-how-cta a:active, 
-  .see-how-cta a:focus {
+  .see-how-cta a:focus,
+  .see-how-cta a:active {
     color: hsl(175, 13%, 39%);
     border-bottom: 1px solid hsl(175, 13%, 39%);
   }
@@ -334,8 +334,8 @@
     border-radius: 40px;
     margin-right: 2rem;
   }
-  .email:active, 
-  .email:focus {
+  .email:focus,
+  .email:active {
     background: linear-gradient(
       to right, 
     hsl(176, 68%, 64%), 
@@ -357,8 +357,8 @@
     cursor: pointer;
   }
   .cta-button-bottom:hover, 
-  .cta-button-bottom:active, 
-  .cta-button-bottom:focus {
+  .cta-button-bottom:focus
+  .cta-button-bottom:active {
     background: hsl(176, 65%, 69%);
   }
 
