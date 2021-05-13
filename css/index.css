@@ -426,11 +426,10 @@
   }
   .footer-row-column li {
     padding-bottom: 1rem;
-  }
-  .footer-row-column a {
     color: white;
+    cursor: pointer;
   }
-  .footer-row-column a:hover {
+  .footer-row-column li:hover {
     color: hsl(219, 24%, 32%);
   }
 
