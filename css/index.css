@@ -428,6 +428,7 @@
     padding-bottom: 1rem;
     color: white;
     cursor: pointer;
+    transition: .2s ease-in-out;
   }
   .footer-row-column li:hover {
     color: hsl(219, 24%, 32%);
