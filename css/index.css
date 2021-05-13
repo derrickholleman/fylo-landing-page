@@ -427,13 +427,12 @@
     font-family: 'Open Sans', sans-serif;
     margin-right: 4rem;
   }
-  .footer-row-column li {
-    cursor: pointer;
-  }
+
   .footer-row-column li a {
     color: white;
     transition: .1s ease-in-out;
     position: relative;
+    cursor: pointer;
   }
   .footer-row-column li a:hover,
   .footer-row-column li a:focus, 
