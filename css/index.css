@@ -429,13 +429,15 @@
   }
   .footer-row-column li {
     padding-bottom: 1rem;
-    color: white;
     cursor: pointer;
+  }
+  .footer-row-column li a {
+    color: white;
     transition: .2s ease-in-out;
   }
-  .footer-row-column li:hover,
-  .footer-row-column li:focus, 
-  .footer-row-column li:active {
+  .footer-row-column li a:hover,
+  .footer-row-column li a:focus, 
+  .footer-row-column li a:active {
     color: hsl(219, 24%, 32%);
   }
 
