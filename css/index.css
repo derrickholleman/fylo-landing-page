@@ -422,13 +422,12 @@
   .footer-row-column {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     font-size: .9rem;
     font-family: 'Open Sans', sans-serif;
     margin-right: 4rem;
   }
   .footer-row-column li {
-    padding-bottom: 1rem;
     cursor: pointer;
   }
   .footer-row-column li a {
@@ -443,11 +442,16 @@
 
   .column1 {
     position: relative;
-    top: 45px;
+    height: 150px;
+    top: 43px;
   }
   .column2 {
     position: relative;
-    top: 27px;
+    height: 150px;
+    top: 43px;
+  }
+  .placeholder {
+    visibility: hidden;
   }
 
   .social-icons {
