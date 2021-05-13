@@ -436,7 +436,7 @@
   .footer-row-column li a:hover,
   .footer-row-column li a:focus, 
   .footer-row-column li a:active {
-    color: hsl(219, 24%, 32%);
+    color: hsl(218, 20%, 48%);
   }
 /* footer pseudo element */
   ul li a.show:hover::before, 
