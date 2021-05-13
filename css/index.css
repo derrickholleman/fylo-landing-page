@@ -432,14 +432,26 @@
   }
   .footer-row-column li a {
     color: white;
-    transition: .2s ease-in-out;
+    transition: .1s ease-in-out;
+    position: relative;
   }
   .footer-row-column li a:hover,
   .footer-row-column li a:focus, 
   .footer-row-column li a:active {
     color: hsl(219, 24%, 32%);
   }
-
+/* footer pseudo element */
+  ul li a.show:hover::before, 
+  ul li a.show:focus::before, 
+  ul li a.show:active::before {
+    content: '';
+    position: absolute;
+    background-color: white;
+    width: 2px;
+    height: 100%;
+    left: -7px;
+  }
+/* --------------------- */
   .column1 {
     position: relative;
     height: 150px;
