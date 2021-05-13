@@ -433,7 +433,9 @@
     cursor: pointer;
     transition: .2s ease-in-out;
   }
-  .footer-row-column li:hover {
+  .footer-row-column li:hover,
+  .footer-row-column li:focus, 
+  .footer-row-column li:active {
     color: hsl(219, 24%, 32%);
   }
 
