@@ -19,10 +19,13 @@
     }
 }
 
-@media screen and (min-width: 483px) and (max-width: 867px) {
+@media screen and (min-width: 483px) and (max-width: 1046px) {
     .email-cta {
         flex-direction: column;
         max-width: 50%;
+    }
+    .email {
+        margin-bottom: 1rem;
     }
 }
 /* --------------------- */
