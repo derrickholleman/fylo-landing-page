@@ -145,6 +145,12 @@
 /* SWITCH TO MOBILE VIEW */
 /* --------------------- */
 
+@media screen and (min-width: 876px) and (max-width: 1044px) {
+    .cta-button-bottom {
+        padding: 1rem 3rem
+    }
+}
+
 @media screen and (max-width: 936px) {
     h1 {
         padding-bottom: 1rem;
@@ -152,5 +158,11 @@
 
     .hero-paragraph {
         padding-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 1046px) {
+    form {
+        margin-right: 0rem;
     }
 }

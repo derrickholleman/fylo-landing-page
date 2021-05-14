@@ -328,14 +328,17 @@
     display: flex;
   }
 
+  form {
+    margin-right: 2rem;
+  }
+
   .email {
     max-height: max-content;
     width: 100%;
-    border: none;
+    border-color: transparent;
     outline: none;
     padding: .8rem 1rem .8rem 1rem;
     border-radius: 40px;
-    margin-right: 2rem;
   }
   .email:focus,
   .email:active {
@@ -343,6 +346,12 @@
       to right, 
     hsl(176, 68%, 64%), 
     hsl(198, 60%, 50%));
+  }
+  .email:invalid {
+    border-color: hsl(354, 100%, 66%);
+  }
+  .email:valid:focus { /* only active while typing */
+    border-color: hsl(130, 100%, 66%);
   }
 
   .cta-button-bottom {
@@ -356,11 +365,11 @@
     hsl(198, 60%, 50%));
     border: none;
     border-radius: 40px;
-    padding: .6rem 4rem;
+    padding: .8rem 3rem;
     cursor: pointer;
   }
   .cta-button-bottom:hover, 
-  .cta-button-bottom:focus
+  .cta-button-bottom:focus,
   .cta-button-bottom:active {
     background: hsl(176, 65%, 69%);
   }
