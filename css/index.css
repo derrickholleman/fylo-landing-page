@@ -446,7 +446,7 @@
     font-family: 'Open Sans', sans-serif;
     margin-right: 4rem;
   }
-
+  /* the a element needs a position of relative for the hover line to work */
   .footer-row-column li a {
     color: white;
     position: relative;
