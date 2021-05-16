@@ -79,7 +79,7 @@
         height: 100%;
         z-index: 99;
         background-color: hsl(216, 53%, 9%);
-        padding-top: 9rem;
+        padding-top: 7rem;
         transition: .4s ease-in-out;
     }
     .mobile-nav.is-active {
