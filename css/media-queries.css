@@ -123,17 +123,7 @@
         }
        }
        /* mobile nav fade in animation END*/
-
-    .mobile-nav.is-active li a:hover::before, 
-    .mobile-nav.is-active li a:focus::before, 
-    .mobile-nav.is-active li a:active::before {
-        content: '';
-        position: absolute;
-        background-color: white;
-        width: 2px;
-        height: 110%;
-        left: 75px;
-    }
+       
     .mobile-nav > li a:hover, 
     .mobile-nav > li a:focus, 
     .mobile-nav > li a:active {
