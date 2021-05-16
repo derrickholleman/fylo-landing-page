@@ -55,6 +55,7 @@
 
   a {
     text-decoration: none;
+    color: white;
   }
 
   ul, li {
@@ -67,6 +68,9 @@
   img {
     max-width: 100%;
     height: auto;
+  }
+  img[alt] {
+    color: white;
   }
   
 </style>
@@ -82,7 +86,20 @@
           <li><a href="#">Team</a></li>
           <li><a href="#">Sign In</a></li>
         </ul>
+        
+        <!--HAMBURGER MENU-->
+        <button class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="mobile-nav">
+          <li class="open"><a href="index.html">Features</a></li>
+          <li class="open"><a href="index.html">Team</a></li>
+          <li class="open"><a href="index.html">Sign In</a></li>
+        </nav>
       </div>
+      <!------------------->
 
       <div class="hero-container">
           <img src="images/illustration-intro.png" width="720" height="534" class="intro-pic" alt="illustration">

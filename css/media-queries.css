@@ -1,5 +1,19 @@
 @media screen and (max-width: 320px) {
-    
+    /* center hamburger on smallest screens */
+    .hamburger {
+        display: block;
+        z-index: 10000;
+        position: absolute;
+        left: 50%;
+        margin-left: -25px;
+        top: 8rem;
+    }
+    .header-logo {
+        position: absolute;
+        left: 50%;
+        margin-left: -88px;
+        top: 2.5rem;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -28,6 +42,20 @@
         margin-bottom: 1rem;
     }
 }
+@media screen and (min-width: 320px) and (max-width: 867px) {
+    .hamburger {
+        display: block;
+        z-index: 10000;
+        position: absolute;
+        right: 2rem;
+        top: 2.8rem;
+    }
+    .header-logo {
+        position: absolute;
+        left: 2rem;
+        top: 2.5rem;
+    }
+}
 /* --------------------- */
 /* SWITCH TO MOBILE VIEW */
 /* --------------------- */
@@ -38,15 +66,81 @@
     .hero-container {
         height: 700px;
     }
-    .header-logo {
-        margin-bottom: 2rem;
+    .nav-ul {
+        display: none;
+    }
+    .mobile-nav {
+        display: block;
+        position: fixed;
+        top: 0;
+        opacity: 0;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+        background-color: hsl(216, 53%, 9%);
+        padding-top: 9rem;
+        transition: .4s ease-in-out;
+    }
+    .mobile-nav.is-active {
+        left: 0;
+        opacity: 1;
+    }
+    .mobile-nav > li {
+        position: relative;
+        display: block;
+        text-align: center;
+        margin: 5rem 3rem;
+        font-size: 1.5rem;
+        font-family: 'Raleway', 'sans-serif';
+        color: white;
+    }
+    /* mobile nav fade in animation START */
+    .mobile-nav.is-active li { 
+        opacity: 0; /* elements fade in from being invisible */
+       }
+       .mobile-nav.is-active li.open {
+        animation-name: fadeIn;
+        animation-fill-mode: forwards;
+        animation-duration: .5s; /* time between start and end of animation */
+        animation-delay: .1s; /* time before animation kicks in */
+        animation-timing-function: ease-in-out;
+       }
+       .mobile-nav.is-active li.open:nth-child(2) {
+        animation-delay: .2s;
+       }
+       .mobile-nav.is-active li.open:nth-child(3) {
+        animation-delay: .4s;
+       }
+       @keyframes fadeIn {
+        0% {
+         transform: translateX(75px); /* placement when animation begins */
+         opacity: 0;
+        }
+        100% {
+         transform: translateX(0); /* placement when animation ends */
+         opacity: 1;
+        }
+       }
+       /* mobile nav fade in animation END*/
+
+    .mobile-nav.is-active li a:hover::before, 
+    .mobile-nav.is-active li a:focus::before, 
+    .mobile-nav.is-active li a:active::before {
+        content: '';
+        position: absolute;
+        background-color: white;
+        width: 2px;
+        height: 110%;
+        left: 150px;
+    }
+    .mobile-nav > li a:hover, 
+    .mobile-nav > li a:focus, 
+    .mobile-nav > li a:active {
+        color: hsl(198, 60%, 50%);
     }
     .header {
-        flex-direction: column;
-        margin: 0 auto;
-    }
-    .nav-ul {
-        max-width: 100%;
+        padding: 6rem 0;
     }
     .hero-title {
         max-width: 90%;
